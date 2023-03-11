@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f242d;
+  font-family: monospace;
+  color: #ffffff;
+  border: 0px solid rgba(0, 0, 0, 0);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#title {
+	color: #262c37;
+	justify-content: top;
+}
+
+
+#start {
+	position: relative;
+	display: inline-block;
+	color: rgba(255, 255, 255, .4);
+	font-size: 1.5em;
+	letter-spacing: .1em;
+	align-self: center;
+	text-decoration: none;
+	justify-content: center;
+	text-transform: uppercase;
+	background: #262c37;
+	padding: 10px 30px;
+	transition: .5s;
+}
+#title {
+	position: relative;
+	display: inline-block;
+	color: rgba(255, 255, 255, .4);
+	font-size: 1.5em;
+	letter-spacing: .1em;
+	align-self: bottom;
+	text-decoration: none;
+	justify-content: bottm;
+	text-transform: uppercase;
+	background: #262c37;
+	padding: 10px 30px;
+	transition: .5s;
+}
+
+#title:hover {
+	color: #00eeff;
+	letter-spacing: .25em;
+	text-shadow: 0 0 5px #00eeff;
+}
+
+#start:hover {
+	color: #ff0000;
+	letter-spacing: .25em;
+	text-shadow: 0 0 5px #ff0000;
+}
+
+#start span {
+	position: absolute;
+	display: block;
+	background: #ff0000;
+	box-shadow: 0 0 5px #ff0000
+}
+
+#start span:nth-child(1) {
+	left: 0px;
+	top: 0px;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s;
+}
+
+#start:hover span:nth-child(1) {
+   transform: scaleX(1);
+   transform-origin: right;
+}
+
+#start span:nth-child(2) {
+	right: 0;
+	top: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .5s;
+}
+
+#start:hover span:nth-child(2) {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+#start span:nth-child(3) {
+	right: 0;
+	top: 0;
+	width: 1.5px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform .5s;
+	transition-delay: .4s;
+}
+
+#start:hover span:nth-child(3) {
+   transform: scaleY(1);
+   transform-origin: top;
+}
+
+#start span:nth-child(4) {
+	left: 0;
+	top: 0;
+	width: 1.5px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform .5s;
+	transition-delay: .4s;
+}
+
+#start:hover span:nth-child(4) {
+   transform: scaleY(1);
+   transform-origin: top;
+}
+
+#start span:nth-child(5) {
+	left: 0;
+	bottom: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform .5s;
+	transition-delay: .8s;
+}
+
+#start:hover span:nth-child(5) {
+   transform: scaleX(1);
+   transform-origin: left;
+}
+
+#start span:nth-child(6) {
+	right: 0;
+	bottom: 0;
+	width: 50.5%;
+	height: 1.5px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .5s;
+	transition-delay: .8s;
+}
+
+#start:hover span:nth-child(6) {
+   transform: scaleX(1);
+   transform-origin: right;
+}
