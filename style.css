@@ -6,7 +6,6 @@ html {
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +13,4 @@ body {
   font-family: monospace;
   color: #ffffff;
   border: 0px solid rgba(0, 0, 0, 0);
-  display: flex;
-  min-height: 100vh;
 }
